@@ -20,7 +20,7 @@ class FoodViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addTapped))
+         /*navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addTapped))*/
         configure()
     }
 
@@ -30,10 +30,10 @@ class FoodViewController: UIViewController {
         self.foodCollectionView.register(FoodCollectionViewCell.nib, forCellWithReuseIdentifier: FoodCollectionViewCell.identifier)
     }
     
-    @objc func addTapped() {
+    /*@objc func addTapped() {
         let vc = storyboard?.instantiateViewController(identifier: "cart") as! CartViewController
         self.navigationController?.pushViewController(vc, animated: true)
-    }
+    }*/
 }
 
 extension FoodViewController: UICollectionViewDataSource {

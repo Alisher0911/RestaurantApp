@@ -28,6 +28,16 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func addToCart(_ sender: Any) {
-        cartProducts.append(Product(image: self.pImage, title: self.pTitle, description: self.pDescription, price: self.pPrice))
+        //cartProducts.append(Product(image: self.pImage, title: self.pTitle, description: self.pDescription, price: self.pPrice))
+        
+        let navVC = tabBarController?.viewControllers![1] as! UINavigationController
+        let cartViewController = navVC.topViewController as! CartViewController
+
+        cartViewController.itemTitle = productTitle.text
+        cartViewController.itemDesc = productDescription.text
+        cartViewController.itemPrice = pPrice
+        cartViewController.itemImage = productImage.image
+        
+        tabBarController?.selectedIndex = 0
     }
 }
