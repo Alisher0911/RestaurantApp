@@ -13,6 +13,17 @@
 		7403D6A625E7FABE0078C65B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7403D6A425E7FABE0078C65B /* Main.storyboard */; };
 		7403D6A825E7FAC00078C65B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7403D6A725E7FAC00078C65B /* Assets.xcassets */; };
 		7403D6AB25E7FAC00078C65B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7403D6A925E7FAC00078C65B /* LaunchScreen.storyboard */; };
+		7403D6B525E803D30078C65B /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7403D6B425E803D30078C65B /* FoodViewController.swift */; };
+		7403D6B725E803E10078C65B /* DrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7403D6B625E803E10078C65B /* DrinkViewController.swift */; };
+		7403D6B925E8041C0078C65B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7403D6B825E8041C0078C65B /* Model.swift */; };
+		7403D6BD25E806790078C65B /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7403D6BB25E806790078C65B /* FoodCollectionViewCell.swift */; };
+		7403D6BE25E806790078C65B /* FoodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7403D6BC25E806790078C65B /* FoodCollectionViewCell.xib */; };
+		7403D6C125E8068F0078C65B /* DrinkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7403D6BF25E8068F0078C65B /* DrinkCollectionViewCell.swift */; };
+		7403D6C225E8068F0078C65B /* DrinkCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7403D6C025E8068F0078C65B /* DrinkCollectionViewCell.xib */; };
+		7403D6C425E80D170078C65B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7403D6C325E80D170078C65B /* DetailViewController.swift */; };
+		7403D6C625E80DEF0078C65B /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7403D6C525E80DEF0078C65B /* CartViewController.swift */; };
+		7403D6CB25E828950078C65B /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7403D6C925E828950078C65B /* CartTableViewCell.swift */; };
+		7403D6CC25E828950078C65B /* CartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7403D6CA25E828950078C65B /* CartTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,17 @@
 		7403D6A725E7FAC00078C65B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7403D6AA25E7FAC00078C65B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7403D6AC25E7FAC00078C65B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7403D6B425E803D30078C65B /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		7403D6B625E803E10078C65B /* DrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkViewController.swift; sourceTree = "<group>"; };
+		7403D6B825E8041C0078C65B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		7403D6BB25E806790078C65B /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
+		7403D6BC25E806790078C65B /* FoodCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCollectionViewCell.xib; sourceTree = "<group>"; };
+		7403D6BF25E8068F0078C65B /* DrinkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCollectionViewCell.swift; sourceTree = "<group>"; };
+		7403D6C025E8068F0078C65B /* DrinkCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkCollectionViewCell.xib; sourceTree = "<group>"; };
+		7403D6C325E80D170078C65B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7403D6C525E80DEF0078C65B /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		7403D6C925E828950078C65B /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		7403D6CA25E828950078C65B /* CartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +78,50 @@
 		7403D69D25E7FABE0078C65B /* RestaurantApp */ = {
 			isa = PBXGroup;
 			children = (
+				7403D6BA25E8065A0078C65B /* Cells */,
+				7403D6B325E8033A0078C65B /* Models */,
+				7403D6B225E803270078C65B /* Controllers */,
 				7403D69E25E7FABE0078C65B /* AppDelegate.swift */,
 				7403D6A025E7FABE0078C65B /* SceneDelegate.swift */,
-				7403D6A225E7FABE0078C65B /* ViewController.swift */,
 				7403D6A425E7FABE0078C65B /* Main.storyboard */,
 				7403D6A725E7FAC00078C65B /* Assets.xcassets */,
 				7403D6A925E7FAC00078C65B /* LaunchScreen.storyboard */,
 				7403D6AC25E7FAC00078C65B /* Info.plist */,
 			);
 			path = RestaurantApp;
+			sourceTree = "<group>";
+		};
+		7403D6B225E803270078C65B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7403D6A225E7FABE0078C65B /* ViewController.swift */,
+				7403D6B425E803D30078C65B /* FoodViewController.swift */,
+				7403D6B625E803E10078C65B /* DrinkViewController.swift */,
+				7403D6C325E80D170078C65B /* DetailViewController.swift */,
+				7403D6C525E80DEF0078C65B /* CartViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7403D6B325E8033A0078C65B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7403D6B825E8041C0078C65B /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7403D6BA25E8065A0078C65B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7403D6BB25E806790078C65B /* FoodCollectionViewCell.swift */,
+				7403D6BC25E806790078C65B /* FoodCollectionViewCell.xib */,
+				7403D6BF25E8068F0078C65B /* DrinkCollectionViewCell.swift */,
+				7403D6C025E8068F0078C65B /* DrinkCollectionViewCell.xib */,
+				7403D6C925E828950078C65B /* CartTableViewCell.swift */,
+				7403D6CA25E828950078C65B /* CartTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +184,9 @@
 			files = (
 				7403D6AB25E7FAC00078C65B /* LaunchScreen.storyboard in Resources */,
 				7403D6A825E7FAC00078C65B /* Assets.xcassets in Resources */,
+				7403D6BE25E806790078C65B /* FoodCollectionViewCell.xib in Resources */,
+				7403D6CC25E828950078C65B /* CartTableViewCell.xib in Resources */,
+				7403D6C225E8068F0078C65B /* DrinkCollectionViewCell.xib in Resources */,
 				7403D6A625E7FABE0078C65B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +198,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7403D6C425E80D170078C65B /* DetailViewController.swift in Sources */,
 				7403D6A325E7FABE0078C65B /* ViewController.swift in Sources */,
+				7403D6C625E80DEF0078C65B /* CartViewController.swift in Sources */,
 				7403D69F25E7FABE0078C65B /* AppDelegate.swift in Sources */,
+				7403D6B525E803D30078C65B /* FoodViewController.swift in Sources */,
+				7403D6CB25E828950078C65B /* CartTableViewCell.swift in Sources */,
+				7403D6B925E8041C0078C65B /* Model.swift in Sources */,
 				7403D6A125E7FABE0078C65B /* SceneDelegate.swift in Sources */,
+				7403D6B725E803E10078C65B /* DrinkViewController.swift in Sources */,
+				7403D6BD25E806790078C65B /* FoodCollectionViewCell.swift in Sources */,
+				7403D6C125E8068F0078C65B /* DrinkCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
